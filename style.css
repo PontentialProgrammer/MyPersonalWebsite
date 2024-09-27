@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('./NeueMontreal-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Neue Montreal Bold';
+    src: url('./NeueMontreal-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Geist Bold';
+    src: url('./Geist-Bold-BF6569491da5a14.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #BABABA;
+ 
+}
+.section1, .navbar, .links, .quote-machine , .section2{
+    display: flex;
+    flex-direction: row;
+}
+.section1{
+    /* margin: auto; */
+    justify-content: center;
+    font-family: Neue Montreal, sans-serif;
+    /* font-size: larger; */
+    /* background-color: rgb(16, 22, 16); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+    width: 50%;
+    justify-content: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    /* border-bottom: solid #000a1690 0.5px; */
+
+    /* background-color: #D7D7D7; */
+    background-color: #ffffff4d;
+    backdrop-filter: blur(.3rem);
+    padding: .3rem;
+}
+.navbar a{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    /* color: rgb(16, 22, 16); */
+    color: BLACK;
+}
+.navbar a:active{
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+.border:hover{
+    transition: 0.5s;
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    width: 80%;
+    height: 100vh;
+    padding-top: 20px;
+    /* background-color: white; */
+    height: 500px;
+    text-align: center;
+    /* align-items: center; */
+    /* padding-top: 200px; */
+    /* background-color: #BABABA; */
+    background-color: transparent;
+    box-shadow:1px 1px 5px grey ;
+    font-family: Neue Montreal, sans-serif;
+    /* font-size: larger; */
+    /* border-bottom: solid white 0.5px; */
+    /* border-top: solid white 0.5px; */
+    justify-content: right;
+    align-items: end;
+}
+.quote-machine{
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items:end;
+    padding: .375rem;
+    border-right: solid #ffffff4d 0.1px;
+    /* padding-right: 1rem; */
+    margin: auto;
+}
+canvas {
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
+.arrow:hover{
+    cursor: pointer;
+}
+.quote{
+    /* height: 100%; */
+    color: grey;
+    /* border-right: solid #000a1690 0.5px; */
+    /* font-family: Neue Montreal Bold, sans-serif; */
+    font-family: "Nunito", sans-serif;
+
+}.quote-machine .new{
+    background-color: #BABABA;
+    color: grey;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;  
+    /* font-size: larger;  */
+    border-bottom: solid #E4E4E4 0.3px;
+}
+.quote-machine .new:hover{
+    transition: 0.6s;
+    background-color: #E4E4E4;
+    cursor: pointer;
+}
+.author{
+    text-align: right;
+    font-family: monospace, sans-serif;
+}
+/* .a_two{
+    height: 100%;
+} */
+.a_two:hover{
+    transition-duration: 1s;
+    background-color: #000a1690;
+    backdrop-filter: 10px;
+}
+.a:hover{
+    color: ghostwhite;
+}
+/* .photo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+    text-align: center;
+}
+.photo img{
+    width:60%;
+    height: 60%;
+    border-radius: 50%;
+    padding: 20px;
+}
+.photo h1{
+    font-family: Neue Montreal, sans-serif;
+    color:#000a1690;
+    padding-left: 20px;
+} */
+.pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.pic img{
+    /* height: 70%; */
+    max-width: 70%;
+    max-height: 70%;
+}
+.pic h2, h3{
+    font-family: Geist Bold, sans-serif;
+    color: grey;
+  
+
+}
+@media screen and (max-width:480px) {
+    .section2{
+        flex-direction: column;
+    }
+    .pic{
+        display: none;
+    }
+    .quote-machine{
+        border-right:none ;
+        width: 80%;
+    }
+    .navbar{
+        width: 90%;
+    }
+}

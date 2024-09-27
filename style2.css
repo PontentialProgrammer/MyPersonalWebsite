@@ -1,0 +1,102 @@
+.myLife{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 70px;
+    width: 80%;
+}
+.aboutMe, .news{
+    color: grey;
+    width: 50%;
+    text-align: center;
+    font-family: Neue Montreal, sans-serif;
+}
+.myLife h2{
+    /* border-bottom: solid #ffffff4d 10px; */
+    /* border-bottom-width:50px ; */
+    text-decoration: underline;
+    text-decoration-thickness:5px ;
+    text-decoration-skip-ink:none ;
+    text-decoration-color: grey;
+}
+.aboutMe p{
+    text-align: left;
+    margin: 10px;
+}
+
+.news p{
+    text-align: right;
+    margin: 10px;
+
+}
+.info_item{
+    background-color: #ffffff4d;
+    backdrop-filter: blur(.3rem);
+    padding: .3rem;
+    border-radius: 10px;
+    margin: 10px;
+}
+.myLife{
+    background-color: transparent;
+    box-shadow:1px 1px 5px grey ;
+    font-family: Neue Montreal, sans-serif;
+    font-size: larger;
+
+
+}
+.article_item:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow:1px 1px 5px grey ;
+
+}
+.myLife2{
+    margin-bottom: 100px;
+}
+.footer{
+    background-color: #ffffff4d ;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer p{
+    margin: 0;
+    color: grey;
+    font-family: Neue Montreal, sans-serif;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact a{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.contact a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    
+}
+.contact .github, .contact .linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    color: black;
+}
+svg:hover{
+    transition: 0.5s;
+    color: grey;
+}
+
+.date{
+    font-style: italic;
+    font-size: x-small;
+}
